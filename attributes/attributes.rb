@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: scala
-# Recipe:: default
+# Attributes:: default
 #
 # Author:: Kyle Allan (<kallan@riotgames.com>)
 # Copyright (C) 2012, Riot Games
@@ -18,14 +18,7 @@
 # limitations under the License.
 #
 
-include_recipe "java"
-include_recipe "ark"
-
-ark "scala" do
-  url node[:scala][:url]
-  checksum node[:scala][:checksum]
-  home_dir node[:scala][:home]
-  version node[:scala][:version]
-  append_env_path true
-  action :install
-end
+default[:scala][:version]     = "2.9.2"
+default[:scala][:url]         = "http://www.scala-lang.org/downloads/distrib/files/scala-#{node[:scala][:version]}.tgz"
+default[:scala][:checksum]    = "862c93482f001e0fb7dc6d4fb04e23f8ae9f594e01e3d6f93adf43c1ff853a68"
+default[:scala][:home]        = "/usr/local/scala"
