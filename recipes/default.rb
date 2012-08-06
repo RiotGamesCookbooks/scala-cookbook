@@ -29,3 +29,9 @@ ark "scala" do
   append_env_path true
   action :install
 end
+
+template "/etc/profile.d/scala_home.sh" do
+  mode 0755
+  source "scala_home.sh.erb"
+  variables(:scala_home => node[:scala][:home])
+end
