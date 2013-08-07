@@ -19,6 +19,6 @@
 #
 
 default[:scala][:version]     = "2.9.2"
-default[:scala][:url]         = "http://www.scala-lang.org/downloads/distrib/files/scala-#{node[:scala][:version]}.tgz"
+default[:scala][:url]         = "http://www.scala-lang.org/files/archive/scala-#{node[:scala][:version]}.tgz"
 default[:scala][:checksum]    = "862c93482f001e0fb7dc6d4fb04e23f8ae9f594e01e3d6f93adf43c1ff853a68"
 default[:scala][:home]        = "/usr/local/scala"
