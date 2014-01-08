@@ -43,7 +43,7 @@ class Default < Thor
     end
 
     def publish_cookbook(options)
-      cmd = "knife cookbook site share nexus \"Utilities\" -o #{source_root.join("..")} -c #{options[:knife_config]}"
+      cmd = "knife cookbook site share scala \"Utilities\" -o #{source_root.join("..")} -c #{options[:knife_config]}"
       cmd << " -V" if options[:verbose]
       system cmd
     end
