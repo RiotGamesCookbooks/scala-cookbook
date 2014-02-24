@@ -28,6 +28,7 @@ ark "scala" do
   version node[:scala][:version]
   append_env_path true
   action :install
+  mode 0755
 end
 
 template "/etc/profile.d/scala_home.sh" do
