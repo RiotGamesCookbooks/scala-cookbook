@@ -1,3 +1,7 @@
+v2.1.0
+
+* [#7](https://github.com/RiotGames/scala-cookbook/pull/8) Upgrading to Scala 2.11.1
+
 v2.0.0
 
 * [#7](https://github.com/RiotGames/scala-cookbook/pull/7) Upgrading to Scala 2.11.0
