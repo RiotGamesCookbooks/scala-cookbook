@@ -18,7 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   # If this value is a shorthand to a box in Vagrant Cloud then
-  #  config.vm.box_url doesn't need to be specified.
+  # config.vm.box_url doesn't need to be specified.
   config.vm.box = "chef/centos-6.5"
 
   # Assign this VM to a host-only network IP, allowing you to access it
