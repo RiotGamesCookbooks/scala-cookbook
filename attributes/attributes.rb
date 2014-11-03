@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 
-default[:scala][:version]     = "2.11.1"
+default[:scala][:version]     = "2.11.2"
 default[:scala][:url]         = "http://www.scala-lang.org/files/archive/scala-#{node[:scala][:version]}.tgz"
-default[:scala][:checksum]    = "f315602e46fab161642d0a46d28a51daa5744edf7b659e84f45bf5cb25ae5aee"
+default[:scala][:checksum]    = "13dd31dff965535f2b3d3075f8283474c212100264071076caf0ca1ea384d256"
 default[:scala][:home]        = "/usr/local/scala"
