@@ -4,7 +4,7 @@ maintainer_email "kallan@riotgames.com"
 license          "Apache 2.0"
 description      "Installs/Configures scala"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "2.1.0"
+version          "2.12.2"
 
 %w{ centos redhat fedora }.each do |os|
   supports os
